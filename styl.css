@@ -1,140 +1,281 @@
-html, body {
-    background: papayawhip;
-    color: hsl(30, 10%, 34%);
+@media(width > 600px){
+    html, body {
+        background: papayawhip;
+        color: hsl(30, 10%, 34%);
 
-    font-family: Outfit, sans-serif;
-    font-weight: 400;
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
 
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
 
-    width: auto;
-    height: auto;
+        width: auto;
+        height: auto;
+
+    }
+
+    .main {
+
+        width: 50%;
+        height: 50%;
+
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+
+        background: white;
+
+        padding: 50px;
+    }
+
+    .top, .instr, .prep, .ingr, .nutr, .omlet {
+        width: 100%;
+        height: 100%;
+
+        margin: 1%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .top p {
+        margin-left: 5px;
+    }
+
+
+    .prep {
+        background: hsl(330, 100%, 98%);
+        border-radius: 15px;
+    }
+
+    .prep h3, li {
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+
+    .ingr li::marker {
+        padding-left: 5px;
+    }
+
+    .ingr, .instr {
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+    }
+
+    .instr li {
+        padding-left: 20px;
+    }
+
+    table {
+        width: 100%;
+        line-height: 200%;
+        border-collapse: collapse;
+    }
+
+    table td {
+        padding: 10px;
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+
+    }
+
+    .value {
+        font-weight: bold;
+        color: hsl(14, 45%, 36%);
+    }
+
+    table .value:nth-child(odd) {
+        font-weight: bold;
+    }
+
+    li {
+        line-height: 1.5;
+        padding-left: 15px;
+    }
+
+    li::marker {
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+    }
+
+    h1 {
+        color: black;
+        font-family: Young Serif, serif;
+
+        padding-left: 5px;
+    }
+
+    .glowny {
+        font-size: 50px;
+    }
+
+    .naglowek {
+        color: hsl(14, 45%, 36%);
+        margin-bottom: 10px;
+        font-size: 35px;
+        font-family: Young Serif, serif;
+    }
+
+    h3 {
+        color: hsl(332, 51%, 32%);
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    b {
+        color: hsl(30, 10%, 34%);
+    }
+
 
 }
 
-.main {
+@media (max-width: 600px) {
+    html, body {
+        color: hsl(30, 10%, 34%);
 
-    width: 50%;
-    height: 50%;
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
 
-    margin-top: 5%;
-    margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
 
+        justify-content: center;
+        align-items: center;
 
-    display: flex;
-    flex-direction: column;
+        width: auto;
+        height: auto;
 
-    justify-content: center;
-    align-items: center;
+    }
 
+    .main {
 
-    background: white;
-    border-radius: 15px;
+        width: auto;
+        height: auto;
 
-    padding: 50px;
-}
+        display: flex;
+        flex-direction: column;
 
-.top, .instr, .prep, .ingr, .nutr, .omlet {
-    width: 100%;
-    height: 100%;
+        justify-content: center;
+        align-items: center;
 
-    margin: 1%;
-}
+        background: white;
+    }
 
-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
+    .top, .instr, .ingr, .nutr{
+        width: 75%;
+    }
 
-.top p {
-    margin-left: 5px;
-}
+    .prep{
+        width: 75%;
+    }
+    .omlet{
+        width: 100%;
+        height: 100%;
+    }
 
+    img {
+        width: 100%;
+        height:100%;
+    }
 
-.prep {
-    background: hsl(330, 100%, 98%);
-    border-radius: 15px;
-}
+    .top p {
+        margin-left: 3%;
+    }
 
-.prep h3, li {
-    padding-left: 20px;
-    padding-top: 5px;
-}
+    .prep {
+        background: hsl(330, 100%, 98%);
+        border-radius: 15px;
+    }
 
-.ingr li::marker {
-    padding-left: 5px;
-}
+    .prep h3, li {
+        padding-left: 20px;
+        padding-top: 5px;
+    }
 
-.ingr, .instr {
-    border-bottom: 1px solid hsl(30, 18%, 87%);
-}
+    .ingr li::marker {
+        padding-left: 5px;
+    }
 
-.instr li{
-    padding-left:20px;
-}
+    .ingr, .instr {
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+    }
 
-table {
-    width: 100%;
-    line-height: 200%;
-    border-collapse: collapse;
-}
+    .instr li {
+        padding-left: 20px;
+    }
 
-table td {
-    padding: 10px;
-    border-bottom: 1px solid hsl(30, 18%, 87%);
+    table {
+        width: 100%;
+        line-height: 200%;
+        border-collapse: collapse;
+    }
 
-}
+    table td {
+        padding: 10px;
+        border-bottom: 1px solid hsl(30, 18%, 87%);
 
-.value {
-    font-weight: bold;
-    color: hsl(14, 45%, 36%);
-}
+    }
 
-table .value:nth-child(odd) {
-    font-weight: bold;
-}
+    .value {
+        font-weight: bold;
+        color: hsl(14, 45%, 36%);
+    }
 
-li {
-    line-height: 1.5;
-    padding-left: 15px;
-}
+    table .value:nth-child(odd) {
+        font-weight: bold;
+    }
 
-li::marker {
-    color: hsl(14, 45%, 36%);
-    font-weight: bold;
-}
+    li {
+        line-height: 1.5;
+        padding-left: 15px;
+    }
 
-h1 {
-    color: black;
-    font-family: Young Serif, serif;
+    li::marker {
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+    }
 
-    padding-left: 5px;
-}
+    h1 {
+        color: black;
+        font-family: Young Serif, serif;
 
-.glowny {
-    font-size: 50px;
-}
+        padding-left: 5px;
+    }
 
-.naglowek {
-    color: hsl(14, 45%, 36%);
-    margin-bottom: 10px;
-    font-size: 35px;
-    font-family: Young Serif, serif;
-}
+    .glowny {
+        font-size: 50px;
+    }
 
-h3 {
-    color: hsl(332, 51%, 32%);
-}
+    .naglowek {
+        color: hsl(14, 45%, 36%);
+        margin-bottom: 10px;
+        font-size: 35px;
+        font-family: Young Serif, serif;
+    }
 
-p {
-    font-size: 16px;
-}
+    h3 {
+        color: hsl(332, 51%, 32%);
+    }
 
-b {
-    color: hsl(30, 10%, 34%);
+    p {
+        font-size: 16px;
+    }
+
+    b {
+        color: hsl(30, 10%, 34%);
+    }
+
 }
