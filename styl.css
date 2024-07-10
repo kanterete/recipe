@@ -1,4 +1,9 @@
-@media(width > 600px){
+@media (width > 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     html, body {
         background: papayawhip;
         color: hsl(30, 10%, 34%);
@@ -144,6 +149,10 @@
 }
 
 @media (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
     html, body {
         color: hsl(30, 10%, 34%);
 
@@ -175,21 +184,22 @@
         background: white;
     }
 
-    .top, .instr, .ingr, .nutr{
+    .top, .instr, .ingr, .nutr {
         width: 75%;
     }
 
-    .prep{
+    .prep {
         width: 75%;
     }
-    .omlet{
+
+    .omlet {
         width: 100%;
         height: 100%;
     }
 
     img {
         width: 100%;
-        height:100%;
+        height: 100%;
     }
 
     .top p {
